@@ -43,6 +43,7 @@ export const styles = StyleSheet.create({
         paddingVertical: 8,
         fontWeight: 'bold',
         color: '#ffffffff',
+        marginBottom: 32,
     },
 
     weatherInfoCity: {
@@ -58,6 +59,27 @@ export const styles = StyleSheet.create({
     weatherInfoTemperature: {
         fontSize: 74,
         fontWeight: 'bold',
+        color: '#ffffffff',
+    },
+
+    weatherInfos: {
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        gap: 42,
+        color: '#ffffffff',
+        marginTop: 60
+    },
+
+    weatherInfosItem: {
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+    },
+
+    weatherInfosItemText: {
+        fontSize: 16,
+        fontWeight: '600',
         color: '#ffffffff',
     },
 });

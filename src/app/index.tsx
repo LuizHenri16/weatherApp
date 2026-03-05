@@ -4,6 +4,7 @@ import React, { useEffect, useState } from "react";
 import { SafeAreaView } from "react-native-safe-area-context";
 import SearchIcon from "../../assets/icons/search-icon.svg";
 import { IconWeather } from "../components/iconWeather";
+import { WeatherInfos } from "../components/weatherInfos";
 import getWeather from "../services/api/weatherAPI";
 import { WeatherData } from "../services/types/weatherData";
 import { styles } from "../style/style";
@@ -40,10 +41,11 @@ export default function Home() {
                 </View>
                 <IconWeather width={240} height={240} code={weather?.current?.condition?.code ?? ""} isDay={weather?.current.is_day ?? 1} />
                 <Text style={styles.weatherInfoTemperature}>{weather?.current.temp_c}°C</Text>
+                <View>
+                    <WeatherInfos day={weather?.current.is_day ?? 1} humidity={weather?.current.humidity ?? 0} wind={weather?.current.wind_kph ?? 0} />
+                </View>
             </View>
-            <View>
 
-            </View>
         </SafeAreaView>
     );
 }

@@ -10,5 +10,8 @@ export interface WeatherData {
             code: number;
         };
         is_day: number;
+        wind_kph: number;
+        humidity: number;
     };
+
 }
