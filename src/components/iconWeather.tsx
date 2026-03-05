@@ -36,13 +36,18 @@ const icons: Record<string, React.ComponentType<any>> = {
 
 interface IconWeatherProps {
     code: string | number;
-    idDay: boolean;
+    isDay: number;
+    width: number;
+    height: number;
 }
 
-export const IconWeather = ({ code, idDay }: IconWeatherProps) => {
-    const iconName = getWeatherIcon(code, idDay);
+export const IconWeather = ({ code, isDay, width, height }: IconWeatherProps) => {
+    const isDayBoolean: boolean = isDay === 1 ? true : false;
+
+    const iconName = getWeatherIcon(code, isDayBoolean);
     const IconComponent = icons[iconName] || icons.Sunny;
+
     return (
-        <IconComponent width={50} height={50} />
+        <IconComponent width={width} height={height} />
     );
 };

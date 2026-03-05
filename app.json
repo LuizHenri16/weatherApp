@@ -1,0 +1,8 @@
+{
+  "android": {
+    "package": "com.anonymous.weatherapp"
+  },
+  "ios": {
+    "bundleIdentifier": "com.anonymous.weatherapp"
+  }
+}
