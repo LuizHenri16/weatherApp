@@ -5,7 +5,8 @@ export const styles = StyleSheet.create({
     safeAreaView: {
         flex: 1,
         backgroundColor: '#34497F',
-        padding: 32,
+        paddingVertical: 24,
+        paddingHorizontal: 12,
     },
 
     searchContainer: {
@@ -16,7 +17,7 @@ export const styles = StyleSheet.create({
         paddingVertical: 8,
         borderRadius: 24,
         borderWidth: 0,
-        backgroundColor: '#92929246',
+        backgroundColor: 'rgba(117, 126, 151, 0.5)',
     },
 
     searchTextInput: {
@@ -40,19 +41,19 @@ export const styles = StyleSheet.create({
         justifyContent: 'space-between',
         alignItems: 'center',
         paddingHorizontal: 18,
-        paddingVertical: 8,
+        paddingVertical: 4,
         fontWeight: 'bold',
         color: '#ffffffff',
         marginBottom: 32,
     },
 
     weatherInfoCity: {
-        fontSize: 26,
+        fontSize: 28,
         color: '#ffffffff',
     },
 
     weatherInfoCountry: {
-        fontSize: 18,
+        fontSize: 16,
         color: '#ffffffff',
     },
 
@@ -68,13 +69,14 @@ export const styles = StyleSheet.create({
         alignItems: 'center',
         gap: 42,
         color: '#ffffffff',
-        marginTop: 60
+        marginTop: 52
     },
 
     weatherInfosItem: {
         flexDirection: 'row',
         justifyContent: 'space-between',
         alignItems: 'center',
+        gap: 6,
     },
 
     weatherInfosItemText: {
@@ -82,4 +84,44 @@ export const styles = StyleSheet.create({
         fontWeight: '600',
         color: '#ffffffff',
     },
+
+    cardWeatherContainer: {
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        gap: 12,
+    },
+
+    cardWeather: {
+        width: 120,
+        height: 140,
+        flexDirection: 'column',
+        justifyContent: 'center',
+        alignItems: 'center',
+        gap: 6,
+
+        backgroundColor: 'rgba(117, 126, 151, 0.5)',
+        borderRadius: 24,
+        padding: 18,
+        marginTop: 18,
+        marginLeft: 10,
+    },
+
+    cardWeatherText: {
+        fontSize: 16,
+        fontWeight: '400',
+        color: '#ffffffff',
+    },
+
+    cardWeatherTemp: {
+        fontSize: 16,
+        fontWeight: '600',
+        color: '#ffffffff',
+
+    },
+
+    forecastList: {
+        paddingHorizontal: 5,
+    },
+
 });
