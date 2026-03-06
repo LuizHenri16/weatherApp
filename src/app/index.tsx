@@ -33,7 +33,7 @@ export default function Home() {
         setWeather(data);
     }
 
-    // Chamada da função ao abrir a aplicação
+    // Chamada da função
     useEffect(() => {
         loadWeather();
     }, []);

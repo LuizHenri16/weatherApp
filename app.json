@@ -1,8 +1,36 @@
 {
-  "android": {
-    "package": "com.anonymous.weatherapp"
-  },
-  "ios": {
-    "bundleIdentifier": "com.anonymous.weatherapp"
+  "expo": {
+    "name": "Weather",
+    "slug": "weatherapp",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "scheme": "weather-app-eng",
+    "icon": "./assets/images/icon.png",
+    "userInterfaceStyle": "automatic",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.anonymous.weatherapp"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "backgroundColor": "#34497f"
+      },
+      "package": "com.anonymous.weatherapp"
+    },
+    "web": {
+      "favicon": "./assets/images/favicon.png"
+    },
+    "splash": {
+      "image": "./assets/images/icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#34497f"
+    },
+    "plugins": [
+      "expo-router"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
   }
 }
