@@ -16,8 +16,10 @@ export const styles = StyleSheet.create({
         paddingHorizontal: 18,
         paddingVertical: 8,
         borderRadius: 24,
-        borderWidth: 0,
-        backgroundColor: 'rgba(117, 126, 151, 0.5)',
+        backgroundColor: '#4E5A79',
+        borderColor: '#5e6d92ff',
+        borderWidth: 1.5,
+        elevation: 4,
     },
 
     searchTextInput: {
@@ -100,7 +102,10 @@ export const styles = StyleSheet.create({
         alignItems: 'center',
         gap: 6,
 
-        backgroundColor: 'rgba(117, 126, 151, 0.5)',
+        backgroundColor: '#4E5A79',
+        borderColor: '#5e6d92ff',
+        borderWidth: 1.5,
+        elevation: 4,
         borderRadius: 24,
         padding: 18,
         marginTop: 18,

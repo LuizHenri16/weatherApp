@@ -15,6 +15,8 @@ export default function Home() {
     const [location, setLocation] = useState<string | null>("São Paulo");
     const [weather, setWeather] = useState<WeatherData | null>(null);
 
+    // Pegando o primeiro dia do forecast para pegar as horas e poder criar
+    // a lista com os cards
     const forecast = weather?.forecast.forecastday[0].hour.map((hour) => {
         return {
             time: hour.time.split(' ')[1],
@@ -25,11 +27,13 @@ export default function Home() {
         }
     })
 
+    // Função para carregar o clima
     async function loadWeather() {
         const data = await getWeather(location!);
         setWeather(data);
     }
 
+    // Chamada da função ao abrir a aplicação
     useEffect(() => {
         loadWeather();
     }, []);
