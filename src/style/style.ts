@@ -4,7 +4,10 @@ export const styles = StyleSheet.create({
 
     safeAreaView: {
         flex: 1,
-        backgroundColor: '#34497F',
+    },
+
+    LinearGradient: {
+        flex: 1,
         paddingVertical: 24,
         paddingHorizontal: 12,
     },
@@ -16,14 +19,14 @@ export const styles = StyleSheet.create({
         paddingHorizontal: 18,
         paddingVertical: 8,
         borderRadius: 24,
-        backgroundColor: '#4E5A79',
-        borderColor: '#5e6d92ff',
+        backgroundColor: '#52638dff',
+        borderColor: '#5c73adff',
         borderWidth: 1.5,
-        elevation: 4,
+        elevation: 6,
     },
 
     searchTextInput: {
-        fontSize: 16,
+        fontSize: 18,
         fontWeight: '600',
         color: '#ffffffff',
     },
@@ -35,7 +38,8 @@ export const styles = StyleSheet.create({
     weatherContainer: {
         flex: 1,
         alignItems: 'center',
-        marginTop: 64,
+        marginTop: 60,
+
     },
 
     weatherInfo: {
