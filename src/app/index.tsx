@@ -45,7 +45,7 @@ export default function Home() {
             style={styles.LinearGradient}
             start={{ x: 0.0, y: 0.25 }}
             end={{ x: 0.5, y: 1.0 }}
-            locations={[0, 0.7, .6]}
+            locations={[0, 0.6, 0.6]}
         >
             <SafeAreaView style={styles.safeAreaView}>
                 <View>
