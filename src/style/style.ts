@@ -8,8 +8,12 @@ export const styles = StyleSheet.create({
 
     LinearGradient: {
         flex: 1,
+    },
+
+    scrollContainer: {
+        flex: 1,
         paddingVertical: 24,
-        paddingHorizontal: 12,
+        paddingHorizontal: 16,
     },
 
     searchContainer: {
@@ -18,7 +22,7 @@ export const styles = StyleSheet.create({
         alignItems: 'center',
         paddingHorizontal: 18,
         paddingVertical: 8,
-        borderRadius: 24,
+        borderRadius: 32,
         backgroundColor: '#52638dff',
         borderColor: '#5c73adff',
         borderWidth: 1.5,
@@ -38,33 +42,28 @@ export const styles = StyleSheet.create({
     weatherContainer: {
         flex: 1,
         alignItems: 'center',
-        marginTop: 60,
-
+        marginTop: 48,
     },
 
     weatherInfo: {
         flexDirection: 'row',
-        justifyContent: 'space-between',
         alignItems: 'center',
-        paddingHorizontal: 18,
-        paddingVertical: 4,
         fontWeight: 'bold',
-        color: '#ffffffff',
         marginBottom: 32,
     },
 
     weatherInfoCity: {
-        fontSize: 28,
+        fontSize: 32,
         color: '#ffffffff',
     },
 
     weatherInfoCountry: {
-        fontSize: 16,
+        fontSize: 18,
         color: '#ffffffff',
     },
 
     weatherInfoTemperature: {
-        fontSize: 74,
+        fontSize: 72,
         fontWeight: 'bold',
         color: '#ffffffff',
     },
@@ -73,9 +72,8 @@ export const styles = StyleSheet.create({
         flexDirection: 'row',
         justifyContent: 'space-between',
         alignItems: 'center',
-        gap: 42,
-        color: '#ffffffff',
-        marginTop: 52
+        gap: 52,
+        marginTop: 48
     },
 
     weatherInfosItem: {
@@ -112,7 +110,6 @@ export const styles = StyleSheet.create({
         elevation: 4,
         borderRadius: 24,
         padding: 18,
-        marginTop: 18,
         marginLeft: 10,
     },
 
@@ -131,6 +128,8 @@ export const styles = StyleSheet.create({
 
     forecastList: {
         paddingHorizontal: 5,
+        paddingVertical: 12,
+        marginTop: 6,
     },
 
 });
